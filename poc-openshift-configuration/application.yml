@@ -1,0 +1,7 @@
+nome: joao
+
+# Desabilitar seguranca nos endpoints de administracao    
+management:
+  security:
+    enabled: false
+

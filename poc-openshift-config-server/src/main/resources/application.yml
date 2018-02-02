@@ -1,0 +1,27 @@
+# Servidor HTTP
+server:
+  port: 8888
+
+encrypt:
+  key: key
+
+management:
+  security:
+    enabled: false
+
+# Propriedades do Spring
+spring:
+  application:
+     name: poc-openshift-config-server
+  cloud:
+    config:
+      server:
+        monitor:
+          github:
+            enabled: true
+        git:
+          uri: https://github.com/andersonlfeitosa/poc-openshift-configuration.git
+          basedir: /tmp/poc-openshift-configuration
+  rabbitmq:
+    host: localhost
+    port: 5672

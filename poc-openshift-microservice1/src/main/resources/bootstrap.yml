@@ -1,0 +1,28 @@
+# Servidor HTTP
+server:
+  port: 8080
+
+# Propriedades do Spring
+spring:
+  application:
+    name: poc-ms1
+  cloud:
+    config:
+      uri: http://localhost:8888    
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+eureka:
+  client:
+    enable: false
+    #serviceUrl:
+      #defaultZone: http://localhost:8080/eureka/
+    #healthcheck:
+      #enabled: true
+  #instance:
+    #leaseRenewalIntervalInSeconds: 5
+

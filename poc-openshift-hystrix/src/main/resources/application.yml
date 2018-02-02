@@ -1,0 +1,18 @@
+# Servidor HTTP
+server:
+  port: 8080
+
+# Spring
+spring:
+  application:
+    name: hystrix-server
+
+# Eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
+    healthcheck:
+      enabled: true
+  instance:
+    leaseRenewalIntervalInSeconds: 5
