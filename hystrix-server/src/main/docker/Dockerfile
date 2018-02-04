@@ -1,7 +1,8 @@
 FROM openjdk:8-jre-alpine
-RUN mkdir -p /opt/microservicos
-ADD maven/poc-openshift-hystrix.jar /opt/microservicos/poc-openshift-hystrix.jar
-WORKDIR /opt/microservicos
+RUN mkdir -p /opt/microservices
+ADD maven/poc-openshift-hystrix.jar /opt/microservices/poc-openshift-hystrix.jar
+RUN chown -R usrjava /opt/
+WORKDIR /opt/microservices
 EXPOSE 8080
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-Xmx1024m", "-jar", "poc-openshift-hystrix.jar"]
-
+USER usrjava
+ENTRYPOINT ["java", "-Duser.timezone=America/Sao_Paulo", "-Djava.security.egd=file:/dev/./urandom", "-Xmx1024m", "-jar", "poc-openshift-hystrix.jar"]

@@ -1,8 +1,8 @@
 FROM openjdk:8-jre-alpine
-RUN mkdir -p /opt/microservicos
-ADD maven/poc-openshift-registry.jar /opt/microservicos/poc-openshift-registry.jar
-WORKDIR /opt/microservicos
+RUN mkdir -p /opt/microservices
+ADD maven/poc-openshift-registry.jar /opt/microservices/poc-openshift-registry.jar
+RUN chown -R usrjava /opt/
+WORKDIR /opt/microservices
 EXPOSE 8080
-USER anderson
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-Xmx1024m", "-jar", "poc-openshift-registry.jar"]
-
+USER usrjava
+ENTRYPOINT ["java", "-Duser.timezone=America/Sao_Paulo", "-Djava.security.egd=file:/dev/./urandom", "-Xmx1024m", "-jar", "poc-openshift-registry.jar"]

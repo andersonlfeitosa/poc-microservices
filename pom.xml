@@ -8,18 +8,46 @@
     <version>1.5.9.RELEASE</version>
   </parent>
 
-  <groupId>com.andersonlfeitosa</groupId>
-  <artifactId>poc-openshift</artifactId>
+  <groupId>com.andersonlfeitosa.poc</groupId>
+  <artifactId>microservices</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <organization>
+    <name>Anderson Lobo Feitosa</name>
+    <url>http://www.andersonlfeitosa.com</url>
+  </organization>
+
+  <developers>
+    <developer>
+      <name>Anderson Lobo Feitosa</name>
+      <email>andersonlf@gmail.com</email>
+      <organization>Anderson Lobo Feitosa</organization>
+      <organizationUrl>http://www.andersonlfeitosa.com</organizationUrl>
+    </developer>
+  </developers>
+  
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <connection>scm:git:https://github.com/andersonlfeitosa/poc-microservices.git</connection>
+    <developerConnection>scm:git:https://github.com/andersonlfeitosa/poc-microservices.git</developerConnection>
+    <url>https://github.com/andersonlfeitosa/poc-microservices.git</url>
+    <tag>HEAD</tag>
+  </scm>
+
   <modules>
+    <module>service-registry</module>
     <module>cloud-configuration</module>
-    <module>hystrix-server</module>
     <module>microservice1</module>
     <module>microservice2</module>
     <module>microservice3</module>
-    <module>service-registry</module>
+    <module>hystrix-server</module>
     <module>turbine-server</module>
   </modules>
 
