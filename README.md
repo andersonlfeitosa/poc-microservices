@@ -1,1 +1,1 @@
-# poc-openshift
+# poc-microservices
