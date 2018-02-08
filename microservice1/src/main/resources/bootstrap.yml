@@ -5,24 +5,32 @@ server:
 # Propriedades do Spring
 spring:
   application:
-    name: poc-ms1
+    name: ms1
   cloud:
     config:
-      uri: http://localhost:8888    
+      uri: http://localhost:8888
+      failFast: true
+      retry:
+        initial-interval: 2000      
   rabbitmq:
     host: localhost
     port: 5672
     username: guest
     password: guest
 
-
 eureka:
   client:
-    enable: false
-    #serviceUrl:
-      #defaultZone: http://localhost:8080/eureka/
-    #healthcheck:
-      #enabled: true
-  #instance:
-    #leaseRenewalIntervalInSeconds: 5
+    enable: true
+    # Indicates whether the client should explicitly unregister itself from the remote server on client shutdown.
+    shouldUnregisterOnShutdown: true
+    # Indicates whether the client should enforce registration during initialization. Defaults to false.
+    shouldEnforceRegistrationAtInit: true
+    serviceUrl:
+      defaultZone: http://localhost:7777/eureka/
+    healthcheck:
+      enabled: true
+  instance:
+    instanceId: ${eureka.instance.hostname}
+    hostname: app.cabal.com.br
+    preferIpAddress: false
 

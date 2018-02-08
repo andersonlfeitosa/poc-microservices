@@ -12,7 +12,7 @@ management:
 # Propriedades do Spring
 spring:
   application:
-     name: poc-openshift-config-server
+     name: cloud-configuration
   cloud:
     config:
       server:
@@ -20,8 +20,8 @@ spring:
           github:
             enabled: true
         git:
-          uri: https://github.com/andersonlfeitosa/poc-openshift-configuration.git
-          basedir: /tmp/poc-openshift-configuration
+          uri: https://github.com/andersonlfeitosa/spring-cloud-configuration-files.git
+          basedir: /tmp/spring-cloud-configuration-files
   rabbitmq:
     host: localhost
     port: 5672

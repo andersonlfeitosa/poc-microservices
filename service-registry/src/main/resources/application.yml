@@ -1,20 +1,22 @@
 # Servidor HTTP
 server:
-  port: 8080
+  port: 7777
 
 # Spring
 spring:
   application:
-    name: eureka-server
+    name: service-registry
 
 # Eureka
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    eurekaServerReadTimeoutSeconds: 40
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   instance:
     useDnsForFetchingServiceUrls: true
-    hostname: ${IP}
-    prefer-ip-address: true
+    leaseExpirationDurationInSeconds: 3
+    hostname: localhost
+    preferIpAddress: false
