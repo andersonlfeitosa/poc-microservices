@@ -1,11 +1,11 @@
 # Servidor HTTP
 server:
-  port: 9999
+  port: 9090
 
 # Propriedades do Spring
 spring:
   application:
-    name: ms1
+    name: ms4
   cloud:
     config:
       uri: http://localhost:8888
@@ -30,11 +30,7 @@ eureka:
     healthcheck:
       enabled: true
   instance:
-    hostname: app.com.br
     instanceId: ${eureka.instance.hostname}
-    homePageUrl: http://${eureka.instance.hostname}/
-    statusPageUrl: http://${eureka.instance.hostname}/info
-    healthCheckUrl: http://${eureka.instance.hostname}/health
-    nonSecurePort: 80
+    hostname: app4.com.br
     preferIpAddress: false
 

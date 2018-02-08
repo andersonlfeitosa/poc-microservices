@@ -47,6 +47,7 @@
     <module>microservice1</module>
     <module>microservice2</module>
     <module>microservice3</module>
+    <module>microservice4</module>
     <module>hystrix-server</module>
     <module>turbine-server</module>
   </modules>
