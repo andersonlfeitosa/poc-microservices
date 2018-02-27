@@ -31,7 +31,7 @@ eureka:
       enabled: true
   instance:
     hostname: app.com.br
-    instanceId: ${eureka.instance.hostname}
+    instanceId: ${eureka.instance.hostname}:${random.value}
     homePageUrl: http://${eureka.instance.hostname}/
     statusPageUrl: http://${eureka.instance.hostname}/info
     healthCheckUrl: http://${eureka.instance.hostname}/health

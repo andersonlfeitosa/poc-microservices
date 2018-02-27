@@ -30,7 +30,11 @@ eureka:
     healthcheck:
       enabled: true
   instance:
-    instanceId: ${eureka.instance.hostname}
-    hostname: app4.com.br
+    hostname: app.com.br
+    instanceId: ${eureka.instance.hostname}:${random.value}
+    homePageUrl: http://${eureka.instance.hostname}/
+    statusPageUrl: http://${eureka.instance.hostname}/info
+    healthCheckUrl: http://${eureka.instance.hostname}/health
+    nonSecurePort: 80
     preferIpAddress: false
 

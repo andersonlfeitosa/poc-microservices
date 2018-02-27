@@ -6,12 +6,3 @@ server:
 spring:
   application:
     name: poc-ms3
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8080/eureka/
-    healthcheck:
-      enabled: true
-  instance:
-    leaseRenewalIntervalInSeconds: 5

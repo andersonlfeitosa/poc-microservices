@@ -26,21 +26,24 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
-    <!-- spring service discovery: habilita uso do eureka -->
+    <!-- spring service discovery: habilita uso do eureka 
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-eureka</artifactId>
     </dependency>
-    <!-- spring cloud config: habilita hystrix -->
+    -->
+    <!-- spring cloud config: habilita hystrix 
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-hystrix</artifactId>
     </dependency>
-    <!-- spring cloud config: habilita hystrix dashboard -->
+    -->
+    <!-- spring cloud config: habilita hystrix dashboard 
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
     </dependency>
+    -->
   </dependencies>
 
 </project>
