@@ -18,8 +18,9 @@ public class ApiController {
     sb.append("<br>");
     sb.append("Date: ");
     sb.append(new Date());
-    sb.append("<br>");
-    sb.append("Version: 2.0");
+    sb.append("<br><h2>");
+    sb.append("Version: 5.0");
+    sb.append("</h2>");
 
     return sb.toString();
   }
