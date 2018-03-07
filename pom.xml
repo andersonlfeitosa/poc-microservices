@@ -57,6 +57,7 @@
     <java.version.source>1.8</java.version.source>
     <java.version.target>1.8</java.version.target>
     <registry>andersonlfeitosa</registry>
+    <image>${registry}/${project.artifactId}:%l</image>
   </properties>
 
   <build>
@@ -81,7 +82,7 @@
         <configuration>
           <images>
             <image>
-              <name>${registry}/${project.artifactId}:%l</name>
+              <name>${image}</name>
               <build>
                 <dockerFile>${project.basedir}/src/main/docker/Dockerfile</dockerFile>
                 <assembly>

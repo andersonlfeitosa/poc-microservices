@@ -8,7 +8,7 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>microservice3</artifactId>
+  <artifactId>authorizer</artifactId>
 
   <dependencies>
     <!-- spring boot -->

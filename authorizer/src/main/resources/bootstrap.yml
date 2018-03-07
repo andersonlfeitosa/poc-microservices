@@ -5,4 +5,4 @@ server:
 # Propriedades do Spring
 spring:
   application:
-    name: poc-ms3
+    name: authorizer
