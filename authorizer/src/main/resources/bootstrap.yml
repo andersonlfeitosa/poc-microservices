@@ -1,8 +1,0 @@
-# Servidor HTTP
-server:
-  port: 8080
-
-# Propriedades do Spring
-spring:
-  application:
-    name: authorizer

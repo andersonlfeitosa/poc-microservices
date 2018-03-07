@@ -26,6 +26,11 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
     </dependency>
+    <!-- spring devtools-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
+    </dependency>
     <!-- spring service discovery: habilita uso do eureka 
     <dependency>
       <groupId>org.springframework.cloud</groupId>

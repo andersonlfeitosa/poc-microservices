@@ -6,7 +6,7 @@ public class Authorization {
 
   private String transactionId;
   private String hostName;
-  private String hostAddress;
+  private String version;
   private Date dateTime;
 
   public Authorization() {
@@ -17,7 +17,7 @@ public class Authorization {
     super();
     this.transactionId = transactionId;
     this.hostName = hostName;
-    this.hostAddress = hostAddress;
+    this.version = hostAddress;
     this.dateTime = dateTime;
   }
 
@@ -37,12 +37,12 @@ public class Authorization {
     this.hostName = hostName;
   }
 
-  public String getHostAddress() {
-    return hostAddress;
+  public String getVersion() {
+    return version;
   }
 
-  public void setHostAddress(String hostAddress) {
-    this.hostAddress = hostAddress;
+  public void setVersion(String hostAddress) {
+    this.version = hostAddress;
   }
 
   public Date getDateTime() {
