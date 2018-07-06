@@ -9,7 +9,13 @@
   </parent>
 
   <artifactId>authorizer</artifactId>
-
+  
+  <properties>
+    <swagger-core.version>1.5.10</swagger-core.version>
+    <springfox-swagger2.version>2.6.1</springfox-swagger2.version>
+    <springfox-swagger-ui.version>2.6.1</springfox-swagger-ui.version>
+  </properties>
+  
   <dependencies>
     <!-- spring boot -->
     <dependency>
@@ -31,6 +37,29 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
     </dependency>
+    <!-- swagger api doc -->
+    <dependency>
+      <groupId>io.swagger</groupId>
+      <artifactId>swagger-core</artifactId>
+      <version>${swagger-core.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-swagger2</artifactId>
+      <version>${springfox-swagger2.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.mapstruct</groupId>
+          <artifactId>mapstruct</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.springfox</groupId>
+      <artifactId>springfox-swagger-ui</artifactId>
+      <version>${springfox-swagger-ui.version}</version>
+    </dependency>
+
     <!-- spring service discovery: habilita uso do eureka 
     <dependency>
       <groupId>org.springframework.cloud</groupId>
