@@ -31,7 +31,7 @@
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-config-monitor</artifactId>
     </dependency>
-    <!-- spring cloud config: habilita uso do rabbitmq-server -->
+    <!-- spring cloud config: habilita uso do rabbitmq-server -->  
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-stream-rabbit</artifactId>

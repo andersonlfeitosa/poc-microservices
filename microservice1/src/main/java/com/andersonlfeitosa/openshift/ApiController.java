@@ -18,44 +18,4 @@ public class ApiController {
     return nome;
   }
 
-  // @RequestMapping("/{nome}")
-  // public String sayHello(@PathVariable String nome) {
-  // StringBuilder sb = new StringBuilder();
-  // sb.append("Hello World!");
-  // sb.append("</br>");
-  // sb.append("SpringBoot Microservice at OpenShift");
-  // sb.append("</br>");
-  // sb.append("Welcome " + nome);
-  // sb.append("</br>");
-  // sb.append("</br>");
-  // sb.append("IP: ");
-  // try {
-  // sb.append(InetAddress.getLocalHost());
-  // } catch (UnknownHostException e) {
-  // e.printStackTrace();
-  // }
-  //
-  // return sb.toString();
-  // }
-  //
-  // @RequestMapping("/")
-  // public String sayHello() {
-  // StringBuilder sb = new StringBuilder();
-  // sb.append("Hello World!");
-  // sb.append("</br>");
-  // sb.append("SpringBoot Microservice at OpenShift");
-  // sb.append("</br>");
-  // sb.append("Welcome guest");
-  // sb.append("</br>");
-  // sb.append("</br>");
-  // sb.append("IP: ");
-  // try {
-  // sb.append(InetAddress.getLocalHost());
-  // } catch (UnknownHostException e) {
-  // e.printStackTrace();
-  // }
-  //
-  // return sb.toString();
-  // }
-
 }
